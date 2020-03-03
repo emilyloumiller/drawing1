@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  background-color: purple;
+  background-image: url('media/palmtrees.jpeg');
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+video {
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  z-index: -10;
+}
+
+audio {
+  z-index: 10;
+  mix-blend-mode: difference;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
