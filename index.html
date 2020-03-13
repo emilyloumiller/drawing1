@@ -9,17 +9,22 @@
 
   <body>
     <div id="container">
-      <!-- video needs to be muted to autoplay !-->
-      <video src="media/birdreg.mp4" type="video/mp4" width="800" height="450" autoplay muted loop>
-      </video>
-      <video src="media/discocropcropcropcrop.mp4" type="video/mp4" width="800" height="450" autoplay muted loop>
-      </video>
-      <video src="media/seablur.mp4" type="video/mp4" width="800" height="450" autoplay muted loop>
+
+      <video src="media/discocropcropcropcrop.mp4" id="disco" type="video/mp4" width="800" height="450" autoplay muted loop>
       </video>
 
+      <img id="palmtrees" src="media/palmtrees.jpeg"></img>
+
+      <div id="videowrapper">
+        <video src="media/seablur.mp4" id="seablur" type="video/mp4" width="800" height="450" autoplay muted loop>
+        </video>
+        <video src="media/birds.mp4" id="birdreg" type="video/mp4" width="800" height="450" autoplay muted loop>
+        </video>
+      </div>
+
       <audio controls autoplay loop src="media/colors_instrumental.wav">
-        <p>Music by <a href="https://freemusicarchive.org/music/Blear_Moon">Jade Jones</a></p>
       </audio>
+
     </div>
   </body>
 </html>

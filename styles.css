@@ -1,12 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-} 
+}
 
 #container {
-  background-color: purple;
-  background-image: url('media/palmtrees.jpeg');
-  background-size: cover;
+  background-color: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,24 +12,63 @@ body {
   min-width: 100%;
   width: auto;
   height: auto;
+  z-index:0;
 }
 
-video {
-  mix-blend-mode: multiply;
-  position: absolute;
+
+#seablur {
+  transform:scale(.8);
+  filter:contrast(1.5) brightness(120%);
+  z-index:3;
   top: 0;
   left: 0;
+  position:fixed;
   min-height: 100%;
   min-width: 100%;
-  width: auto;
-  height: auto;
-  z-index: -10;
+}
+
+#disco {
+  transform:scale(3);
+  filter:hue-rotate(285deg) saturate(50%);
+  mix-blend-mode:color;
+  z-index:1;
+  top: 0;
+  left: 0;
+  position:fixed;
+  min-height: 100%;
+  min-width: 100%;
+  z-index:2;
+}
+
+#birdreg {
+  z-index:4;
+  top: 0;
+  left: 0;
+  position:fixed;
+  min-height: 100%;
+  min-width: 100%;
+  transform:scale(.8);
+  mix-blend-mode:overlay;
 }
 
 audio {
-  z-index: 10;
-  mix-blend-mode: difference;
-  position: absolute;
-  top: 0;
-  right: 0;
+  z-index: 100;
+  mix-blend-mode:hard-light;
+  position: fixed;
+  top: 45%;
+  left:40%;
+}
+
+#videowrapper {
+  border-radius:400px;
+  background-color:Black;
+}
+
+#palmtrees {
+  z-index:3;
+  width:100vw;
+  height:auto;
+  opacity:.8;
+  filter:invert();
+  mix-blend-mode:hard-light;
 }
